@@ -15,14 +15,24 @@
 
 
 for (let i = 1; i <=100; i++) {
+
+    let numerino = ""
+
     if (i % 3 == 0 && i % 5 == 0) {
+        text= "fizzbuzz"
+        color = "bg-danger"
         console.log("FizzBuzz")
     } else if (i % 3 == 0) {
+        text= "buzz"
+        color = "bg-warning"
         console.log("Fizz")
     } else if (i % 5 == 0) {
+        text= "buzz"
+        color = "bg-success"
         console.log("Buzz")
     } else {
         console.log(i)
     }
-    
+
+    numerino = document.getElementById("numerino").innerHTML
 }
